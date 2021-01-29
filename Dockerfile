@@ -1,6 +1,6 @@
 FROM jboss/wildfly:18.0.1.Final
 
-ENV KEYCLOAK_VERSION 10.0.0
+ENV KEYCLOAK_VERSION 11.0.3
 
 # Install WildFly adapter
 RUN curl -fsSL https://downloads.jboss.org/keycloak/$KEYCLOAK_VERSION/adapters/keycloak-oidc/keycloak-wildfly-adapter-dist-$KEYCLOAK_VERSION.tar.gz | tar xzf - -C /opt/jboss/wildfly \
